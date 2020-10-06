@@ -80,9 +80,19 @@ html {
   justify-content: flex-start;
   padding: 5px 6px;
 }
+.sub-menu-container {
+  display: none;
+  flex-flow: column;
+  border-width: 3px 4px 3px 4px;
+  border-color: yellow;
+  margin: 3px 4px;
+}
+.menu-item:hover .sub-menu-container {
+  display: flex;
+}
 .menu-item {
   /* flex: 1 1; */
- align-self: flex-start;
+  align-self: flex-start;
   position: relative;
 }
 .menu-item a {
@@ -139,7 +149,7 @@ html {
   border: 5px solid rgb(192, 155, 116);
   margin: 1%;
   align-self: center;
-  
+
   padding: 0%;
   display: flex;
   flex-flow: column wrap;
@@ -303,11 +313,11 @@ html {
 }
 
 .form-box span:hover .tooltip {
-  visibility:visible;
+  visibility: visible;
 }
 
 /* The following  are taken from this fancy checkbox article: https://medium.com/mobile-app-developers/styling-checkbox-css-tips-e103c54ea1c7 */
-.form-box  .fancy-check-label {
+.form-box .fancy-check-label {
   position: relative;
   margin: auto;
   cursor: pointer;
@@ -318,13 +328,13 @@ html {
   clear: both;
 }
 
-.form-box  .fancy-check-label input {
+.form-box .fancy-check-label input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-.form-box  .fancy-check-label .fancy-check-custom {
+.form-box .fancy-check-label .fancy-check-custom {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -337,23 +347,22 @@ html {
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
 }
 
-
-.form-box  .fancy-check-label input:checked ~ .fancy-check-custom {
-  background-color: #FFFFFF;
+.form-box .fancy-check-label input:checked ~ .fancy-check-custom {
+  background-color: #ffffff;
   border-radius: 5px;
   -webkit-transform: rotate(0deg) scale(1);
   -ms-transform: rotate(0deg) scale(1);
   transform: rotate(0deg) scale(1);
-  opacity:1;
-  border: 2px solid  #FFFFFF;
+  opacity: 1;
+  border: 2px solid #ffffff;
 }
-.form-box .disabled-check input:checked ~ .fancy-check-custom  {
+.form-box .disabled-check input:checked ~ .fancy-check-custom {
   border: 2px solid gray;
 }
-.form-box  .fancy-check-label .fancy-check-custom::after {
+.form-box .fancy-check-label .fancy-check-custom::after {
   position: absolute;
   content: "";
   left: 12px;
@@ -366,7 +375,7 @@ html {
   -webkit-transform: rotate(0deg) scale(0);
   -ms-transform: rotate(0deg) scale(0);
   transform: rotate(0deg) scale(0);
-  opacity:1;
+  opacity: 1;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -374,25 +383,23 @@ html {
   -o-transition: all 0.3s ease-out;
 }
 
-
-.form-box  .fancy-check-label input:checked ~ .fancy-check-custom::after {
--webkit-transform: rotate(45deg) scale(1);
--ms-transform: rotate(45deg) scale(1);
-transform: rotate(45deg) scale(1);
-opacity:1;
-left: 8px;
-top: 3px;
-width: 6px;
-height: 12px;
-border: solid var(--action-bg);
-border-width: 0 2px 2px 0;
-background-color: transparent;
-border-radius: 0;
+.form-box .fancy-check-label input:checked ~ .fancy-check-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity: 1;
+  left: 8px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid var(--action-bg);
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
 }
 
-
 /* For Ripple Effect */
-.form-box  .fancy-check-label .fancy-check-custom::before {
+.form-box .fancy-check-label .fancy-check-custom::before {
   position: absolute;
   content: "";
   left: 10px;
@@ -403,10 +410,10 @@ border-radius: 0;
   border: 2px solid var(--layout-text);
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
-  transform: scale(0);    
+  transform: scale(0);
 }
 
-.form-box  .fancy-check-label input:checked ~ .fancy-check-custom::before {
+.form-box .fancy-check-label input:checked ~ .fancy-check-custom::before {
   left: -3px;
   top: -3px;
   width: 24px;
@@ -415,7 +422,7 @@ border-radius: 0;
   -webkit-transform: scale(3);
   -ms-transform: scale(3);
   transform: scale(3);
-  opacity:0;
+  opacity: 0;
   z-index: 999;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
@@ -423,6 +430,3 @@ border-radius: 0;
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
 }
-
-
-
