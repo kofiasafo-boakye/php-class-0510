@@ -33,15 +33,16 @@ class Pull_Down_Menu_Item extends Menu_item
         $this->sub_menus = $sub_menus;
     }
     function get_html() {
-            $active_class = $this->active ? " class=\"active-menu\" " : "";
-            $html = '<div class="menu-item"><span class="tooltip">'.$this->tool_tip . '</span>';
-            $html .= '<button id="mi"' . $this->text . '"' . $active_class . '">' . $this->text . '</button>';
+            $active_class = $this->active ? ' class="active-menu" ' : "";
+        
+            $html = '<div class="sub-menu"><div class="menu-item"><span class="tooltip">'.$this->tool_tip . '</span>';
+            $html .= '<button id="mi"' . $this->text . '"' . $active_class . '">' . $this->text . '</button></div>';
             $html .='<div class="sub-menu-container">';
             foreach($this->sub_menus as $menu ) {
                 $html .= $menu->get_html();
             }
             
-            $html .= "</div></div>";          
+            $html .= "</div></div>";  // close the sub-menu container and sub-menu divs
             return $html;
     }    
 }

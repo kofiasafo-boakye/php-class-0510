@@ -80,6 +80,10 @@ html {
   justify-content: flex-start;
   padding: 5px 6px;
 }
+.sub-menu {
+  align-self: flex-start;
+  position: relative;
+}
 .sub-menu-container {
   display: none;
   flex-flow: column;
@@ -87,7 +91,7 @@ html {
   border-color: yellow;
   margin: 3px 4px;
 }
-.menu-item:hover .sub-menu-container {
+.sub-menu:hover .sub-menu-container {
   display: flex;
 }
 .menu-item {
