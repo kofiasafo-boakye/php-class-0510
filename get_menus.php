@@ -13,11 +13,8 @@ function get_menus($user_role) {
    ];
    $menu_html = "";
     foreach ($menus as $menu) {
-        if($user_role<=$menu->min_role) {
-            $menu_html.= <<<__MENU
-            <div class="menu-item"><span class="tooltip">$menu->tool_tip</span><A id="mi-Home" href="$menu->link" target="_self" >$menu->text</A>
-            </div>
-            __MENU;
+        if($menu->role_can_view($user_role)) {
+            $menu_html.= $menu->get_html();
         }
     }
    return $menu_html;

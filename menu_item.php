@@ -11,6 +11,15 @@ class Menu_Item
         $this->min_role = isset($role) ? $role : 3;
         $this->tool_tip = isset($tool_tip) ? $tool_tip : $text . "Menu Item";
     }
+    function get_html() {
+        return <<<__MENU
+        <div class="menu-item"><span class="tooltip">$this->tool_tip</span><A id="mi-Home" href="$this->link" target="_self" >$this->text</A>
+        </div>
+        __MENU;
+    }
+    function role_can_view($user_role) {
+        return $user_role<=$this->min_role;
+    }
 }
 
 ?>
