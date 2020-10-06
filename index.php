@@ -13,7 +13,7 @@ $role = $_GET['role'];
 
 <div class="menu">    
 <?php 
-echo get_menus($role);
+echo get_menus($role,"Dashboard");
 ?>
 </div>
 <div id="title" class="title-box">
