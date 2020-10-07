@@ -6,10 +6,10 @@ class Menu_Item
     public $link;
     public $tool_tip;
     public $active=false;
-    function __construct($text, $link, $role, $tool_tip) {
+    function __construct($text, $link, $role=3, $tool_tip=null) {
         $this->text = $text;
         $this->link = $link;
-        $this->min_role = isset($role) ? $role : 3;
+        $this->min_role = $role;
         $this->tool_tip = isset($tool_tip) ? $tool_tip : $text . "Menu Item";
         
     }
