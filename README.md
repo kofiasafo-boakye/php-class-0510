@@ -15,9 +15,9 @@ git clone https://AshWeb2020/php-class-0510.git c:\xampp\htdocs\objects
 
 the step directions assume you are running git with the current directory at the root of the repository on your local machines; e.g. `c:\xampp\htdocs\objects` for the case demonstrated above.
 
-This will place it in the objects directory; and when xampp is running you can access the repository with http://localhost/objects which will open `index.php`. index.php and student.php are the two active files.
+This will place it in the objects directory; and when xampp is running you can access the repository with <http://localhost/objects> which will open `index.php`. index.php and student.php are the two active files.
 
-After step-0, only index.php is used. Steps after one use a url 'GET' parameter to determine which menus to show. For example, to show menus as a faculty member, navigate to http://localhost/objects/index.php?role=1
+After step-0, only index.php is used. Steps after one use a url 'GET' parameter to determine which menus to show. For example, to show menus as a faculty member, navigate to <http://localhost/objects/index.php?role=1>
 
 ## Switching steps to earlier spots in class
 
