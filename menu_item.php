@@ -10,7 +10,7 @@ class Menu_Item
         $this->text = $text;
         $this->link = $link;
         $this->min_role = $role;
-        $this->tool_tip = isset($tool_tip) ? $tool_tip : $text . "Menu Item";
+        $this->tool_tip = $tool_tip==null ? $tool_tip : $text . "Menu Item";
         
     }
     function get_html() {
