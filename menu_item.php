@@ -42,7 +42,7 @@ class Pull_Down_Menu_Item extends Menu_item
                 $html .= $menu->get_html();
             }
             
-            $html .= "</div></div>";  // close the sub-menu container and sub-menu divs
+            $html .= "</div></div>";  // close the sub-menu container and sub-menu div's
             return $html;
     }    
 }
