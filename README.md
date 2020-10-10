@@ -10,12 +10,12 @@ The last section has [the assignment](#assignment-information) and it's instruct
 
 ## Tutorial from Lecture
 
-Using this file to review the tutorial in lecture
+Using this file to review the tutorial in lecture.  **NOTE** this part is only for review of the lecture; not for completing the assignment.  skip to the last section on [the assignment](#assignment-information) to contionue.
 
 After the file is cloned; it can be used as the basis of the assignment. The recommendation is to clone the repository under the `htdocs` directory of Apache. In the default XAMPP case on Windows, clone it to an 'objects' directory with the following command:
 
 ```bash
-git clone https://AshWeb2020/php-class-0510.git c:\xampp\htdocs\objects
+git clone https://github.com/AshWeb2020/php-class-0510.git c:\xampp\htdocs\objects
 ```
 
 the step directions assume you are running git with the current directory at the root of the repository on your local machines; e.g. `c:\xampp\htdocs\objects` for the case demonstrated above.
