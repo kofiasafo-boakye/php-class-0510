@@ -10,7 +10,7 @@ The last section has [the assignment](#assignment-information) and it's instruct
 
 ## Tutorial from Lecture
 
-Using this file to review the tutorial in lecture.  **NOTE** this part is only for review of the lecture; not for completing the assignment.  skip to the last section on [the assignment](#assignment-information) to contionue.
+Using this file to review the tutorial in lecture.  **NOTE** this part is only for review of the lecture; not for completing the assignment.  skip to the last section on [the assignment](#assignment-information) to continue.
 
 After the file is cloned; it can be used as the basis of the assignment. The recommendation is to clone the repository under the `htdocs` directory of Apache. In the default XAMPP case on Windows, clone it to an 'objects' directory with the following command:
 
