@@ -12,7 +12,7 @@ The last section has [the assignment](#assignment-information) and it's instruct
 
 Using this file to review the tutorial in lecture.  **NOTE** this part is only for review of the lecture; not for completing the assignment.  skip to the last section on [the assignment](#assignment-information) to continue.
 
-After the file is cloned; it can be used as the basis of the assignment. The recommendation is to clone the repository under the `htdocs` directory of Apache. In the default XAMPP case on Windows, clone it to an 'objects' directory with the following command:
+Only follow this section if you want to replicate the steps done in class.
 
 ```bash
 git clone https://github.com/AshWeb2020/php-class-0510.git c:\xampp\htdocs\objects
@@ -92,6 +92,14 @@ This readme is in the "head" of the repository in the master branch. It's slight
 Creating a `Menu` Class
 
 For the assignment, you are going to create a new class that replaces the current `get_menu()` function. It is very important that your method, file, and property names match to get full credit for the assignment.
+
+Clone the repository created for you by github classroom.  A good way to clone the repository under the `htdocs` directory of Apache. In the default XAMPP case on Windows, clone it to an 'objects' directory with the following command:
+
+```bash
+git clone ***link to my respository*** c:\xampp\htdocs\objects
+```
+
+
 
 ### Create a class called `Menu`
 
