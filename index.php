@@ -1,5 +1,5 @@
 <?php
-include_once "get_menus.php";
+include_once "menu.php";
 $role = $_GET['role'];
 ?><!DOCTYPE html>
 <html lang="en">
@@ -12,8 +12,9 @@ $role = $_GET['role'];
 <body>
 
 <div class="menu">    
-<?php 
-echo get_menus($role,"Manage");
+<?php
+$class = new Menu("Manage", $role); 
+echo $class->get_html();
 ?>
 </div>
 <div id="title" class="title-box">
