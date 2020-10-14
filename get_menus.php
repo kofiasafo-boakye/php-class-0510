@@ -12,7 +12,7 @@ function get_menus($user_role,$active_menu) {
    ],2,"Manage Class"),
        new Menu_Item("Logout","../login/logout.php",3,"Logout of system")
    ];
-
+   
    $menu_html = "";
     foreach ($menus as $menu) {
         $menu->active = $menu->text == $active_menu;
